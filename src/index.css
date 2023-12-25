@@ -6,8 +6,125 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-*,*::before,*::after{
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body * {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+/* main styles start */
+.sticky-notes-section {
+  padding: 50px 0;
+}
+
+.sticky-notes-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.sticky-notes-section .stick-notes-outer {
+  text-align: center;
+  background: rgb(255 253 117 / 40%);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.sticky-notes-section h1 {
+  text-align: center;
+  font-size: 34px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+.sticky-notes-section .site-btn {
+  display: inline-block;
+  background-color: #f3f009;
+  border: 0;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #212121;
+  font-weight: 600;
+  text-transform: capitalize;
+  min-width: 130px;
+  cursor: pointer;
+}
+
+.modal-main {
+  padding: 40px 10px 10px;
+  border-radius: 8px;
+  background-color: #FFFD75;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  min-height: 200px;
+}
+
+.close-btn {
+  background-color: #E01C12;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #FFF;
+  border: 0;
+  font-weight: 900;
+  font-size: 17px;
+  font-family: "Gloria Hallelujah", cursive;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+textarea {
+  resize: none;
+  border: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 5px;
+  display: block;
+  width: 100%;
+}
+
+textarea::placeholder {
+  opacity: 1 !important;
+  color: #716e6e;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+textarea+textarea {
+  margin-top: 15px;
+}
+
+textarea.note-title {
+  height: 45px;
+  overflow-y: auto;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+textarea.note-content {
+  height: 100px;
+  overflow-y: auto;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+button:focus {
+  outline: none;
 }
