@@ -20,11 +20,11 @@ body * {
 }
 
 /* main styles start */
-.sticky-notes-section {
+section {
   padding: 50px 0;
 }
 
-.sticky-notes-section .container {
+.container {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 50px;
@@ -127,4 +127,18 @@ textarea.note-content {
 
 button:focus {
   outline: none;
+}
+
+.add-note {
+  background-color: green;
+  border: 0;
+  color: #FFF;
+  min-width: 70px;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
