@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Notes({ onAddNote }) {
+function Notes({ onAddNote}) {
 	const [title, setTitle] = useState("");
 	const [content, setContent] = useState("");
 	function handleAdd(e) {
@@ -8,7 +8,7 @@ function Notes({ onAddNote }) {
 		if (!title && !content) {
 			alert("please add title and content");
 		}
-		const newNote = { title, content };
+		const newNote = { title, content, id:Date.now() };
 		onAddNote(newNote);
 		setTitle("");
 		setContent("");
